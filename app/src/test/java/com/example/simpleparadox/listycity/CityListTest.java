@@ -57,7 +57,7 @@ class CityListTest {
         City city = new City("HaiKou", "HaiNan Island");
         cityList.add(city);
 
-        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
+        assertEquals(3, city.compareTo(cityList.getCities().get(0)));//error
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(0)));
 
     }
