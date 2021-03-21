@@ -53,7 +53,7 @@ class CityListTest {
     void testGetCities() {
         CityList cityList = mockCityList();
 
-        assertEquals(1,mockCity().compareTo(cityList.getCities().get(0)));//error
+        assertEquals(0,mockCity().compareTo(cityList.getCities().get(0)));//error
         City city = new City("HaiKou", "HaiNan Island");
         cityList.add(city);
 
@@ -67,7 +67,7 @@ class CityListTest {
         CityList cityList = mockCityList();
         City city = new City("London", "Ontario");
         cityList.add(city);
-        assertEquals(3, cityList.countCities());//error
+        assertEquals(2, cityList.countCities());//error
         cityList.delete(mockCity());
         assertEquals(1,cityList.countCities());    
     }
