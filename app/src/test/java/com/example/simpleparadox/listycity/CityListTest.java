@@ -1,6 +1,5 @@
 package com.example.simpleparadox.listycity;
 
-import org.junit.Test;
 import org.junit.jupiter.api.Test;
 
 
