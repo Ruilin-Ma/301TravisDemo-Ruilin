@@ -33,7 +33,7 @@ class CityListTest {
     void testHasCity() {
         CityList cityList = mockCityList();
 
-        assertEquals(2, cityList.countCities());//error
+        assertEquals(1, cityList.countCities());//error
 
         assertTrue(cityList.hasCity(new City("Edmonton", "Alberta")));
     }
@@ -46,7 +46,7 @@ class CityListTest {
 
         cityList.add(new City("Regina", "Saskatchewan"));
 
-        assertEquals(3, cityList.countCities());//error
+        assertEquals(2, cityList.countCities());//error
 
         cityList.delete(new City("Regina", "Saskatchewan"));
 
