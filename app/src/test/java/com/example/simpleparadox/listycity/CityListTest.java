@@ -55,7 +55,7 @@ class CityListTest {
 
         assertEquals(1,mockCity().compareTo(cityList.getCities().get(0)));
         City city = new City("Charlottetown", "Prience Edward Island");
-        citylist.add(city);
+        cityList.add(city);
 
         assertEquals(0, city.compareTo(cityList.getCities().get(0)));
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(0)));
@@ -66,7 +66,7 @@ class CityListTest {
     void testDeleteCity(){
         CityList cityList = mockCityList();
         City city = new City("Victoria", "British Columbia");
-        citylist.add(city);
+        cityList.add(city);
         assertEquals(2, cityList.countCities());
         cityList.delete(mockCity());
         assertEquals(1,cityList.countCities());    
